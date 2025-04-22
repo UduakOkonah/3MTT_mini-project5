@@ -1,39 +1,60 @@
-/* src/App.css */
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #ff69b4, #ffccff);
-  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffb6c1, #ffe4e1);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .app-container {
   text-align: center;
-  padding: 20px;
 }
 
-.card {
-  background: white;
-  padding: 40px 30px;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+.counter-card {
+  background-color: rgb(218, 192, 192);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  margin: auto;
 }
 
-.card:hover {
-  transform: scale(1.03);
+.counter-card h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #d63384;
-  margin-bottom: 15px;
+.count {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: #ff4081;
 }
 
-p {
-  font-size: 1.2rem;
-  color: #555;
+.buttons button {
+  padding: 0.6rem 1.2rem;
+  margin: 0 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff69b4;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #ff1493;
+}
+
+.buttons button:disabled {
+  background-color: #ffc0cb;
+  cursor: not-allowed;
+}
+
+.limit-msg {
+  color: #ff0000;
+  margin-top: 1rem;
+  font-weight: bold;
 }
